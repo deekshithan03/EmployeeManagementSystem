@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration successful</title>
+<style>
+body {
+	background-image: url("images/registered.png");
+	
+}
+
+.alert {
+	padding: 20px;
+	background-color: blue;
+	color: white;
+}
+
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 50px;
+	line-height: 40px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.closebtn:hover {
+	color: black;
+}
+</style>
+
+</head>
+<body>
+	<div class="alert">
+		<h1 align="center">
+			<span class="closebtn"
+				onclick="this.parentElement.style.display='none';">&times;</span> <strong>Registered
+				Successfully!! </strong><a th:href="@{/login}">Click here to Login</a>
+		</h1>
+	</div>
+</body>
+</html>

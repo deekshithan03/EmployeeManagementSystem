@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Not Found</title>
+<style>
+body{
+	background-color: black;
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 50px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+</head>
+<body>
+	<div class="alert">
+  		<h1 align="center"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  		<strong>Error!! </strong><a th:href="@{/login}">Invalid Login Credentials</a> or <a th:href="@{/register}">Unregistered User</a></h1>
+	</div>
+</body>
+</html>
